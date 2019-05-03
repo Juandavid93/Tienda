@@ -43,8 +43,8 @@ if($result->num_rows>0){
         echo "<td>".$row['codigo_prod']."</td>";
         echo "<td>".$row['nombre_prod']."</td>";
         echo "<td>".$row['cantidad']."</td>";
-        echo "<td><a href = 'update.php'><img src ='icons/edit.png' width = '40'></a> </td>";
-        echo "<td><img src ='icons/delete.png' width = '30'></td>";
+        echo "<td><a href = 'update.php ?id=".$row ['id']."&cod=".$row['codigo_prod']."&nom=".$row['nombre_prod']."&cant=".$row['cantidad']."'><img src ='icons/edit.png' width = '40'></a> </td>";
+        echo "<td><a href =  'delete.php?id=".$row ['id']."&cod=".$row['codigo_prod']."'><img src ='icons/delete.png' width = '30'></td>";
         echo "</tr>";
 }
 }else{
